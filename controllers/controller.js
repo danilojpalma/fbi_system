@@ -11,7 +11,6 @@ const home = (req, res) => {
 
 const login = (req, res) => {
     const { email, password } = req.body;
-    console.log(email, password);
     
     try {
         const user = users.find(user => user.email === email && user.password === password);
